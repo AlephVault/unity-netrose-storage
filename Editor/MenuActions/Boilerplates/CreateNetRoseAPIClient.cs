@@ -18,7 +18,7 @@ namespace GameMeanMachine.Unity.NetRose.Storage
                 [MenuItem("Assets/Create/Net Rose/Boilerplates/Create Single-Account storage API client", false, 205)]
                 public static void ExecuteSingleAccountBoilerplate()
                 {
-                    string directory = "Assets/com.gamemeanmachine.unity.netrose.storage/" +
+                    string directory = "Packages/com.gamemeanmachine.unity.netrose.storage/" +
                                        "Editor/MenuActions/Boilerplates/Templates";
                     
                     TextAsset singleCharAccount = AssetDatabase.LoadAssetAtPath<TextAsset>(
@@ -79,7 +79,7 @@ namespace GameMeanMachine.Unity.NetRose.Storage
                 [MenuItem("Assets/Create/Net Rose/Boilerplates/Create Multiple-Account storage API client", false, 206)]
                 public static void ExecuteBoilerplate()
                 {
-                    string directory = "Assets/com.gamemeanmachine.unity.netrose.storage/" +
+                    string directory = "Packages/com.gamemeanmachine.unity.netrose.storage/" +
                                        "Editor/MenuActions/Boilerplates/Templates";
                     
                     TextAsset multiCharAccount = AssetDatabase.LoadAssetAtPath<TextAsset>(
