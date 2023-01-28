@@ -1,0 +1,23 @@
+using Newtonsoft.Json;
+
+namespace Server.Authoring.Behaviours.External.Models
+{
+    public class SingleCharAccount
+    {
+        [JsonProperty("_id")]
+        public string Id;
+        
+        [JsonProperty("login")]
+        public string Login;
+        
+        // Hopefully, this password will be encrypted or hashed!
+        [JsonProperty("password")]
+        public string Password;
+        
+        [JsonProperty("display_name")]
+        public string DisplayName;
+
+        [JsonProperty("position")]
+        public Position Position;
+    }
+}
