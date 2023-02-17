@@ -8,12 +8,12 @@ namespace Server.Authoring.Behaviours.External.Models
         public string Scope;
         
         [JsonProperty("map")]
-        public uint Map;
+        public int Map;
 
         [JsonProperty("x")]
-        public uint X;
+        public ushort X;
         
         [JsonProperty("y")]
-        public uint Y;
+        public ushort Y;
     }
 }

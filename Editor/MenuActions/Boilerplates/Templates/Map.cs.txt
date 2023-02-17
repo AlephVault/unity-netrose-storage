@@ -11,7 +11,7 @@ namespace Server.Authoring.Behaviours.External.Models
         public string ScopeId;
         
         [JsonProperty("index")]
-        public uint Index;
+        public int Index;
 
         [JsonProperty("drop")]
         public uint[][] Drop;
