@@ -19,6 +19,11 @@ namespace Server.Authoring.Behaviours.External
             [JsonProperty("drops")]
             public int[][][] Drops;
         }
+        
+        /**
+         * BEWARE! USE THESE FUNCTIONS ONLY IN THE CONTEXT OF THE MAIN THREAD.
+         * As an example, inside a NetRose protocol's RunInMainThread method.
+         */
 
         private const string TOKEN = "sample-abcdef";
         private Root Root;
@@ -28,7 +33,7 @@ namespace Server.Authoring.Behaviours.External
 
         public SingleCharAccountAPIClient(string endpoint)
         {
-            Root = new Root("http://localhost:8080", new Authorization("Bearer", TOKEN));
+            Root = new Root(endpoint, new Authorization("Bearer", TOKEN));
             Accounts = (ListResource<SingleCharAccount, SingleCharAccount>)Root.GetList<SingleCharAccount, SingleCharAccount>("accounts");
             Scopes = (ListResource<Scope, Scope>)Root.GetList<Scope, Scope>("scopes");
             Maps = (ListResource<Map, Map>)Root.GetList<Map, Map>("scopes");
