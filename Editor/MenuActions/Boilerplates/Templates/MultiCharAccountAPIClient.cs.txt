@@ -52,7 +52,7 @@ namespace Server.Authoring.Behaviours.External
         /// </remarks>
         public Task<Result<MultiCharAccount, string>> FindAccountByLogin(string login)
         {
-            return Accounts.OperationTo<MultiCharAccount>("by-login", new Dictionary<string, string>
+            return Accounts.ViewTo<MultiCharAccount>("by-login", new Dictionary<string, string>
             {
                 {"login", login}
             });

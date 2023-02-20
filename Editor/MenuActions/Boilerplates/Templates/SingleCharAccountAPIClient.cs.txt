@@ -50,7 +50,7 @@ namespace Server.Authoring.Behaviours.External
         /// </remarks>
         public Task<Result<SingleCharAccount, string>> FindAccountByLogin(string login)
         {
-            return Accounts.OperationTo<SingleCharAccount>("by-login", new Dictionary<string, string>
+            return Accounts.ViewTo<SingleCharAccount>("by-login", new Dictionary<string, string>
             {
                 {"login", login}
             });
