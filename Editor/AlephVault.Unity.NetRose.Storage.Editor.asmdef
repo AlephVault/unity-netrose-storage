@@ -1,9 +1,9 @@
 {
-    "name": "GameMeanMachine.Unity.NetRose.Storage.Editor",
+    "name": "AlephVault.Unity.NetRose.Storage.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:f90bbbab12f82970aadf435cc687514a",
-        "GUID:2a236d4d67d35cfb5bc3dc430a3689ed"
+        "GUID:42a58ae4474b45ceb8164b1eb21290ab"
     ],
     "includePlatforms": [
         "Editor"
