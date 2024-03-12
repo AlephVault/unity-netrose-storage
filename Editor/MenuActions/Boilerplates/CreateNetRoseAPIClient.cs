@@ -15,7 +15,7 @@ namespace AlephVault.Unity.NetRose.Storage
                 /// <summary>
                 ///   Opens a dialog to execute the single-account API client creation boilerplate.
                 /// </summary>
-                [MenuItem("Assets/Create/AlephVault/Net Rose/Boilerplates/Create Single-Account storage API client", false, 205)]
+                [MenuItem("Assets/Create/Aleph Vault/NetRose/Boilerplates/Create Single-Account storage API client", false, 205)]
                 public static void ExecuteSingleAccountBoilerplate()
                 {
                     string directory = "Packages/com.alephvault.unity.netrose.storage/" +
@@ -76,7 +76,7 @@ namespace AlephVault.Unity.NetRose.Storage
                 /// <summary>
                 ///   Opens a dialog to execute the multiple-account API client creation boilerplate.
                 /// </summary>
-                [MenuItem("Assets/Create/AlephVault/Net Rose/Boilerplates/Create Multiple-Account storage API client", false, 206)]
+                [MenuItem("Assets/Create/Aleph Vault/NetRose/Boilerplates/Create Multiple-Account storage API client", false, 206)]
                 public static void ExecuteBoilerplate()
                 {
                     string directory = "Packages/com.alephvault.unity.netrose.storage/" +
