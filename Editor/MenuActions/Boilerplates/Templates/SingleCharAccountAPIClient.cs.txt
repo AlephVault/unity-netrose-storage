@@ -36,7 +36,7 @@ namespace Server.Authoring.Behaviours.External
             Root = new Root(endpoint, new Authorization("Bearer", TOKEN));
             Accounts = (ListResource<SingleCharAccount, SingleCharAccount>)Root.GetList<SingleCharAccount, SingleCharAccount>("accounts");
             Scopes = (ListResource<Scope, Scope>)Root.GetList<Scope, Scope>("scopes");
-            Maps = (ListResource<Map, Map>)Root.GetList<Map, Map>("scopes");
+            Maps = (ListResource<Map, Map>)Root.GetList<Map, Map>("maps");
         }
         
         /// <summary>

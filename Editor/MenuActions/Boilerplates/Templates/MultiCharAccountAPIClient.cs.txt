@@ -38,7 +38,7 @@ namespace Server.Authoring.Behaviours.External
             Accounts = (ListResource<MultiCharAccount, MultiCharAccount>)Root.GetList<MultiCharAccount, MultiCharAccount>("accounts");
             Characters = (ListResource<Character, Character>)Root.GetList<Character, Character>("characters");
             Scopes = (ListResource<Scope, Scope>)Root.GetList<Scope, Scope>("scopes");
-            Maps = (ListResource<Map, Map>)Root.GetList<Map, Map>("scopes");
+            Maps = (ListResource<Map, Map>)Root.GetList<Map, Map>("maps");
         }
 
         /// <summary>
